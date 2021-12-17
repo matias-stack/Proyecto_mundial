@@ -1,0 +1,1037 @@
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" [routerLink]="[ '/dashboard' ]">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!-- Dark Logo icon -->
+                            <img src="../../assets/plugins/images/logo-icon.png" alt="homepage" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="logo-text">
+                            <!-- dark Logo text -->
+                            <img src="../../assets/plugins/images/logo-text.png" alt="homepage" />
+                        </span>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <ul class="navbar-nav d-none d-md-block d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-toggler nav-link waves-effect waves-light text-white"
+                                href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class=" in">
+                            <form role="search" class="app-search d-none d-md-block me-3">
+                                <input type="text" placeholder="Search..." class="form-control mt-0">
+                                <a href="" class="active">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li>
+                            <a class="profile-pic" href="#">
+                                <img src="../../assets/plugins/images/users/varun.jpg" alt="user-img" width="36"
+                                    class="img-circle"><span class="text-white font-medium">Steave</span></a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/dashboard' ]"
+                                aria-expanded="false">
+                                <i class="far fa-clock" aria-hidden="true"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/profile' ]"
+                                aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="hide-menu">Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/basic-table' ]"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">Basic Table</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/fontawesome' ]"
+                                aria-expanded="false">
+                                <i class="fa fa-font" aria-hidden="true"></i>
+                                <span class="hide-menu">Icon</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/map-google' ]"
+                                aria-expanded="false">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span class="hide-menu">Google Map</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/blank' ]"
+                                aria-expanded="false">
+                                <i class="fa fa-columns" aria-hidden="true"></i>
+                                <span class="hide-menu">Blank Page</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/results' ]"
+                              aria-expanded="false">
+                              <i class="fa fa-book fa-fw" aria-hidden="true"></i>
+                              <span class="hide-menu">Results</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" [routerLink]="[ '/404' ]"
+                                aria-expanded="false">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <span class="hide-menu">Error 404</span>
+                            </a>
+                        </li>
+                        <li class="text-center p-20 upgrade-btn">
+                            <a href="https://www.wrappixel.com/templates/ampleadmin/"
+                                class="btn d-grid btn-danger text-white" target="_blank">
+                                Upgrade to Pro</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="min-height: 250px;">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Results</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <div class="d-md-flex">
+                            <ol class="breadcrumb ms-auto">
+                                <li><a href='/dashboard' class="fw-normal">Dashboard</a></li>
+                            </ol>
+                            <a href="https://www.wrappixel.com/templates/ampleadmin/" target="_blank"
+                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Upgrade
+                                to Pro</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                      <!-- Logo
+                      <div class="white-box">
+                            <h3 class="box-title">Blank Page</h3>
+                        </div>-->
+                        <div class="site-wrap">
+
+                          <div class="site-mobile-menu site-navbar-target">
+                            <div class="site-mobile-menu-header">
+                              <div class="site-mobile-menu-close">
+                                <span class="icon-close2 js-menu-toggle"></span>
+                              </div>
+                            </div>
+                            <div class="site-mobile-menu-body"></div>
+                          </div>
+
+
+                          <div class="hero overlay" style="background-image: url('../../assets/plugins/images/pasto.jpg');">
+                            <div class="container">
+                              <div class="row align-items-center">
+                                <div class="col-lg-5 mx-auto text-center">
+                                  <h1 class="text-white">RESULTADOS MUNDIALES</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+                          <div class="site-section bg-dark">
+                            <div class="container">
+
+                              <!--letrero- ->
+                          <div class="container">
+
+
+                            <div class="row">
+                              <div class="col-lg-12">
+
+                                <div class="d-flex team-vs">
+                                  <span class="score">4-1</span>
+                                  <div class="team-1 w-50">
+                                    <div class="team-details w-100 text-center">
+                                      <img src="../../assets/plugins/images/flag_francia.png" alt="Image" class="img-fluid">
+                                      <h3>FRANCIA <span>(win)</span></h3>
+                                      <ul class="list-unstyled">
+                                        <li>Mario Mandžukić 18' (GEC)</li>
+                                        <li>Antoine Griezmann 38' (P)</li>
+                                        <li>Paul Pogba 59'</li>
+                                        <li>Kylian Mbappé 65'</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                  <div class="team-2 w-50">
+                                    <div class="team-details w-100 text-center">
+                                      <img src="../../assets/plugins/images/flag_croacia.png" alt="Image" class="img-fluid">
+                                      <h3>CROACIA <span>(loss)</span></h3>
+                                      <ul class="list-unstyled">
+                                        <li>Ivan Perišić 28'</li>
+                                        <li>Mario Mandžukić 69'</li>
+
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        < !---->
+
+                              <div class="row mb-5">
+                                <div class="col-lg-12">
+
+                                </div>
+                              </div>
+                              <!-- 2014-->
+                              <div class="row">
+                                <div class="col-12 title-section">
+                                  <h2 class="heading">Resultados Copa del mundo año 2014</h2>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="../../assets/plugins/images/flag_brasil.png" alt="Image">
+                                              <h3>Brasil</h3>
+                                            </div>
+                                            <h1>1</h1>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <h1>7</h1>
+                                            <div class="team-2 text-center">
+                                              <img src="../../assets/plugins/images/flag_alemania.png" alt="Image">
+                                              <h3>Alemania</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>Semifinal</h4>
+
+                                        <span class="text-white">8 Julio, 2014</span>
+                                        <p><span class="text-white">20:00 PM GMT+0</span></p>
+                                        <p class="mb-5">
+                                        <strong class="text-primary">Estadio Mineirão</strong>
+
+
+                                        </p>
+
+                                        <!--<div  class="col-lg-12" style="display: none;">
+                                          <div><a class="btn btn-small" title="Cerrar"><i class="fa fa-close"></i></a></div>-->
+
+
+
+                                        <!--MOSTRAR BUENO-->
+                                      <button class="btn btn-primary"  (click)="toogleTag()" ><i class="fa fa-eye"></i> Cronologia</button>
+                                        <!--<button (click)="toogleTag()"> Toggle h2 tag</button>-->
+
+                                        <div *ngIf="showMe"> toggle me on button click
+
+                                          <div class="container">
+
+
+                                            <div class="row">
+                                              <div class="col-lg-12">
+
+                                                <div class="d-flex team-vs">
+                                                  <div class="team-1 w-50">
+                                                    <div class="team-details w-100 text-center">
+                                                      <img src="../../assets/plugins/images/flag_brasil.png" alt="Image" class="img-fluid">
+                                                      <h3>Brasil <span>(loss)</span></h3>
+                                                      <ul class="list-unstyled">
+                                                        <li>Oscar 90'</li>
+
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="team-2 w-50">
+                                                    <div class="team-details w-100 text-center">
+                                                      <img src="../../assets/plugins/images/flag_alemania.png" alt="Image" class="img-fluid">
+                                                      <h3>Alemania <span>(win)</span></h3>
+                                                      <ul class="list-unstyled">
+                                                        <li>Thomas Müller 11'</li>
+                                                        <li>Miroslav Klose 23'</li>
+                                                        <li>Toni Kroos 24'26'</li>
+                                                        <li>Sami Khedira 29'</li>
+                                                        <li>André Schürrle 69'79'</li>
+
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              &nbsp;
+                                              &nbsp;
+                                              <p>
+                                              <button class="btn btn-primary"  (click)="toogleTag()" ><i class="fa fa-eye"></i> Ocultar</button>
+                                            </div>
+
+
+
+                                          </div>
+                                        </div>
+
+
+                                      </div>
+                                                     <!-- semi-->
+                                  </div>
+
+
+                                </div>
+
+
+
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="../../assets/plugins/images/flag_paises.png" alt="Image">
+                                              <h3>Paises Bajos</h3>
+                                            </div>
+                                            <h2>(2)0</h2>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <h2>0(4)</h2>
+                                            <div class="team-2 text-center">
+                                              <img src="../../assets/plugins/images/flag_argentina.png" alt="Image">
+                                              <h3>Argentina</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>Semifinal</h4>
+
+                                        <span class="text-white">9 Julio, 2014</span>
+                                        <p><span class="text-white">20:00 PM GMT+0</span></p>
+                                        <p class="mb-5">
+                                        <strong class="text-primary">Arena de São Paulo</strong>
+                                        </p>
+
+
+
+
+                                          <!--MOSTRAR BUENO-->
+                                      <button class="btn btn-primary"  (click)="toogleTag2()" ><i class="fa fa-eye"></i> Cronologia</button>
+                                      <!--<button (click)="toogleTag()"> Toggle h2 tag</button>-->
+
+                                      <div *ngIf="showMe2"> toggle me on button click
+
+                                        <div class="container">
+
+
+                                          <div class="row">
+                                            <div class="col-lg-12">
+
+                                              <div class="d-flex team-vs">
+                                                <div class="team-1 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_paises.png" alt="Image" class="img-fluid">
+                                                    <h3>Paises Bajos <span>(loss)</span></h3>
+                                                    <ul class="list-unstyled">
+                                                      <li>Ron Vlaar &nbsp;🔴</li>
+                                                      <li>Arjen Robben &nbsp;🟢</li>
+                                                      <li>Wesley Sneijder 🔴</li>
+                                                      <li>Dirk Kuyt &nbsp;&nbsp;&nbsp;&nbsp;🟢</li>
+
+
+                                                    </ul>
+                                                  </div>
+                                                </div>
+
+                                                <div class="team-2 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_argentina.png" alt="Image" class="img-fluid">
+                                                    <h3>Argentina <span>(win)</span></h3>
+                                                    <ul class="list-unstyled">
+                                                      <li>🟢 Lionel Messi</li>
+                                                      <li>🟢 Ezequiel Garay</li>
+                                                      <li>🟢 Sergio Agüero</li>
+                                                      <li>🟢 Maxi Rodriguez </li>
+
+
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            &nbsp;
+                                            &nbsp;
+                                            <p>
+                                            <button class="btn btn-primary"  (click)="toogleTag2()" ><i class="fa fa-eye"></i> Ocultar</button>
+                                          </div>
+
+
+
+                                        </div>
+                                      </div>
+
+
+
+
+
+
+                                        <!---->
+                                      </div>
+
+
+
+
+                                  </div>
+                                </div>
+                                <!--FINAL-->
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="../../assets/plugins/images/flag_alemania.png" alt="Image">
+                                              <h3>Alemania</h3>
+                                            </div>
+                                            <h1>1</h1>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <h1>0</h1>
+                                            <div class="team-2 text-center">
+                                              <img src="../../assets/plugins/images/flag_argentina.png" alt="Image">
+                                              <h3>Argentina</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>Final</h4>
+                                        <span class="text-white">13 Julio, 2014</span>
+                                        <p><span class="text-white">20:00 PM GMT+0</span></p>
+                                        <p class="mb-5">
+                                        <strong class="text-primary">Estadio Maracaná</strong>
+                                        </p>
+
+                                        <!--MOSTRAR BUENO-->
+                                      <button class="btn btn-primary"  (click)="toogleTag3()" ><i class="fa fa-eye"></i> Cronologia</button>
+                                      <!--<button (click)="toogleTag()"> Toggle h2 tag</button>-->
+
+                                      <div *ngIf="showMe3"> toggle me on button click
+
+                                        <div class="container">
+
+
+                                          <div class="row">
+                                            <div class="col-lg-12">
+
+                                              <div class="d-flex team-vs">
+                                                <div class="team-1 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_alemania.png" alt="Image" class="img-fluid">
+                                                    <h3>Alemania <span>(win)</span></h3>
+                                                    <ul class="list-unstyled">
+                                                      <li>Mario Götze 113'</li>
+
+                                                    </ul>
+                                                    <h3>CAMPEÓN</h3>
+                                                  </div>
+                                                </div>
+
+                                                <div class="team-2 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_argentina.png" alt="Image" class="img-fluid">
+                                                    <h3>Argentina <span>(loss)</span></h3>
+                                                    <ul class="list-unstyled">
+
+
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            &nbsp;
+                                            &nbsp;
+                                            <p>
+                                            <button class="btn btn-primary"  (click)="toogleTag3()" ><i class="fa fa-eye"></i> ocultar</button>
+                                          </div>
+
+
+
+                                        </div>
+                                      </div>
+
+
+                                        <!---->
+                                      </div>
+
+                                  </div>
+                                </div>
+                                <!-- TERCER LUGAR
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="images/logo_3.png" alt="Image">
+                                              <h3>Football League</h3>
+                                            </div>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <div class="team-2 text-center">
+                                              <img src="images/logo_4.png" alt="Image">
+                                              <h3>Soccer</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>World Cup League</h4>
+                                        <p class="mb-5">
+                                          <span class="d-block">December 20th, 2020</span>
+                                          <span class="d-block">9:30 AM GMT+0</span>
+                                          <strong class="text-primary">NewASDASDro Arena</strong>
+                                        </p>
+
+                                      </div>
+
+                                  </div>
+                                </div>
+                              -->
+                              </div>
+                              <!-- 2018-->
+                              <div class="row">
+                                <div class="col-12 title-section">
+                                  <h2 class="heading">Resultados Copa del mundo año 2018</h2>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="../../assets/plugins/images/flag_francia.png" alt="Image">
+                                              <h3>Francia</h3>
+                                            </div>
+                                            <h1>1</h1>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <h1>0</h1>
+                                            <div class="team-2 text-center">
+                                              <img src="../../assets/plugins/images/flag_belgica.png" alt="Image">
+                                              <h3>Bélgica</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>Semifinal</h4>
+                                        <span class="text-white">10 Julio, 2018</span>
+                                        <p><span class="text-white">18:00 PM GMT+0</span></p>
+                                        <p class="mb-5">
+                                        <strong class="text-primary">Estadio Krestovski</strong>
+                                        </p>
+                                        <button class="btn btn-primary"  (click)="toogleTag4()" ><i class="fa fa-eye"></i> Cronologia</button>
+                                        <!--<button (click)="toogleTag()"> Toggle h2 tag</button>-->
+
+                                        <div *ngIf="showMe4"> toggle me on button click
+
+                                          <div class="container">
+
+
+                                            <div class="row">
+                                              <div class="col-lg-12">
+
+                                                <div class="d-flex team-vs">
+                                                  <div class="team-1 w-50">
+                                                    <div class="team-details w-100 text-center">
+                                                      <img src="../../assets/plugins/images/flag_francia.png" alt="Image" class="img-fluid">
+                                                      <h3>Francia <span>(win)</span></h3>
+                                                      <ul class="list-unstyled">
+                                                        <li>Samuel Umiti 51'</li>
+
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="team-2 w-50">
+                                                    <div class="team-details w-100 text-center">
+                                                      <img src="../../assets/plugins/images/flag_belgica.png" alt="Image" class="img-fluid">
+                                                      <h3>Belgica <span>(loss)</span></h3>
+                                                      <ul class="list-unstyled">
+
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              &nbsp;
+                                              &nbsp;
+                                              <p>
+                                              <button class="btn btn-primary"  (click)="toogleTag4()" ><i class="fa fa-eye"></i> Ocultar</button>
+                                            </div>
+
+
+
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
+
+                                  </div>
+                                </div>  <!-- semi-->
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="../../assets/plugins/images/flag_croacia.png" alt="Image">
+                                              <h3>Croacia</h3>
+                                            </div>
+                                            <h1>2</h1>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <h1>1</h1>
+                                            <div class="team-2 text-center">
+                                              <img src="../../assets/plugins/images/flag_inglaterra.png" alt="Image">
+                                              <h3>Inglaterra</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>Semifinal</h4>
+
+                                        <span class="text-white">11 Julio, 2018</span>
+                                        <p><span class="text-white">18:00 PM GMT+0</span></p>
+                                        <p class="mb-5">
+                                        <strong class="text-primary">Estadio de Loujniki</strong>
+                                        </p>
+                                        <button class="btn btn-primary"  (click)="toogleTag5()" ><i class="fa fa-eye"></i> Cronologia</button>
+                                        <!--<button (click)="toogleTag()"> Toggle h2 tag</button>-->
+
+                                        <div *ngIf="showMe5"> toggle me on button click
+
+                                          <div class="container">
+
+
+                                            <div class="row">
+                                              <div class="col-lg-12">
+
+                                                <div class="d-flex team-vs">
+                                                  <div class="team-1 w-50">
+                                                    <div class="team-details w-100 text-center">
+                                                      <img src="../../assets/plugins/images/flag_croacia.png" alt="Image" class="img-fluid">
+                                                      <h3>Croacia <span>(win)</span></h3>
+                                                      <ul class="list-unstyled">
+                                                        <li>Ivan Perisic 68'</li>
+                                                        <li>Mario Mandzukic 102'</li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="team-2 w-50">
+                                                    <div class="team-details w-100 text-center">
+                                                      <img src="../../assets/plugins/images/flag_inglaterra.png" alt="Image" class="img-fluid">
+                                                      <h3>Inglaterra <span>(loss)</span></h3>
+                                                      <ul class="list-unstyled">
+                                                        <li>Kieran Trippier 5'</li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              &nbsp;
+                                              &nbsp;
+                                              <p>
+                                              <button class="btn btn-primary"  (click)="toogleTag5()" ><i class="fa fa-eye"></i> Ocultar </button>
+                                            </div>
+
+
+
+                                          </div>
+                                        <!---->
+                                        </div> 
+                                      </div>   
+                                  </div>
+                                </div>
+                                <!--FINAL-->
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="../../assets/plugins/images/flag_francia.png" alt="Image">
+                                              <h3>Francia</h3>
+                                            </div>
+                                            <h1>4</h1>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <h1>2</h1>
+                                            <div class="team-2 text-center">
+                                              <img src="../../assets/plugins/images/flag_croacia.png" alt="Image">
+                                              <h3>Croacia</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>Final</h4>
+                                        <span class="text-white">15 Julio, 2018</span>
+                                        <p><span class="text-white">16:00 PM GMT+0</span></p>
+                                        <p class="mb-5">
+                                        <strong class="text-primary">Estadio de Loujniki</strong>
+                                        </p>
+                                        <!--MOSTRAR BUENO-->
+                                      <button class="btn btn-primary"  (click)="toogleTag6()" ><i class="fa fa-eye"></i> Cronologia</button>
+                                      <!--<button (click)="toogleTag()"> Toggle h2 tag</button>-->
+
+                                      <div *ngIf="showMe6"> toggle me on button click
+
+                                        <div class="container">
+
+
+                                          <div class="row">
+                                            <div class="col-lg-12">
+
+                                              <div class="d-flex team-vs">
+                                                <div class="team-1 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_francia.png" alt="Image" class="img-fluid">
+                                                    <h3>Francia <span>(win)</span></h3>
+                                                    <ul class="list-unstyled">
+                                                      <li>Mario Mandzukic 18' (GE)</li>
+                                                      <li>Antoine Griezmann 38' (PEN) </li>
+                                                      <li>Paul Pogba  59'</li>
+                                                      <li>Kylian Mbappé 65'</li>
+
+                                                    </ul>
+                                                    <h3>CAMPEÓN</h3>
+                                                  </div>
+                                                </div>
+
+                                                <div class="team-2 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_croacia.png" alt="Image" class="img-fluid">
+                                                    <h3>Croacia <span>(loss)</span></h3>
+                                                    <ul class="list-unstyled">
+                                                      <li>Ivan Perisic 28'</li>
+                                                      <li>Mario Mandzukic  69'</li>
+
+
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            &nbsp;
+                                            &nbsp;
+                                            <p>
+                                            <button class="btn btn-primary"  (click)="toogleTag6()" ><i class="fa fa-eye"></i> Ocultar</button>
+                                          </div>
+
+
+
+                                        </div>
+                                      </div>
+                                        <!---->
+                                      </div>
+
+                                  </div>
+                                </div>
+                                <!-- TERCER LUGAR
+                                <div class="col-lg-6 mb-4">
+                                  <div class="bg-light p-4 rounded">
+                                    <div class="widget-body">
+                                        <div class="widget-vs">
+                                          <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                            <div class="team-1 text-center">
+                                              <img src="images/logo_3.png" alt="Image">
+                                              <h3>Football League</h3>
+                                            </div>
+                                            <div>
+                                              <span class="vs"><span>VS</span></span>
+                                            </div>
+                                            <div class="team-2 text-center">
+                                              <img src="images/logo_4.png" alt="Image">
+                                              <h3>Soccer</h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="text-center widget-vs-contents mb-4">
+                                        <h4>World Cup League</h4>
+                                        <p class="mb-5">
+                                          <span class="d-block">December 20th, 2020</span>
+                                          <span class="d-block">9:30 AM GMT+0</span>
+                                          <strong class="text-primary">New Euro Arena</strong>
+                                        </p>
+
+                                      </div>
+
+                                  </div>
+                                </div>-->
+
+                              </div>
+                            </div>
+                          </div> <!-- .site-section -->
+
+
+                        </div>
+                        <!-- .site-wrap -->
+
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a
+                    href="https://www.wrappixel.com/">wrappixel.com</a>
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../../assets/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../assets/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../assets/js/custom.js"></script>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#hide").on('click', function() {
+            $("#element").hide();
+            return false;
+        });
+
+        $("#show").on('click', function() {
+            $("#element").show();
+            return false;
+        });
+    });
+    </script>
+
+
+
+<!--
+
+                                      <button name="2" class="btn btn-primary"  (click)="toogleTag()" ><i class="fa fa-eye"></i> Mostrar</button>
+
+
+                                      <div *ngIf="showMe"> toggle me on button click
+
+                                        <div class="container">
+
+
+                                          <div class="row">
+                                            <div class="col-lg-12">
+
+                                              <div class="d-flex team-vs">
+                                                <span class="score">1-7</span>
+                                                <div class="team-1 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_paises.png" alt="Image" class="img-fluid">
+                                                    <h3>Paises Bajos <span>(loss)</span></h3>
+                                                    <ul class="list-unstyled">
+                                                      <li>Oscar 90'</li>
+
+                                                    </ul>
+                                                  </div>
+                                                </div>
+
+                                                <div class="team-2 w-50">
+                                                  <div class="team-details w-100 text-center">
+                                                    <img src="../../assets/plugins/images/flag_argentina.png" alt="Image" class="img-fluid">
+                                                    <h3>Argentina <span>(win)</span></h3>
+                                                    <ul class="list-unstyled">
+                                                      <li>Thomas Müller 11'</li>
+                                                      <li>Miroslav Klose 23'</li>
+                                                      <li>Toni Kroos 24'26'</li>
+                                                      <li>Sami Khedira 29'</li>
+                                                      <li>André Schürrle 69'79'</li>
+
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            &nbsp;
+                                            &nbsp;
+                                            <p>
+                                            <button class="btn btn-primary"  (click)="toogleTag()" ><i class="fa fa-eye"></i> Ocultar</button>
+                                          </div>
+
+
+
+                                        </div>
+                                      </div>
+
+
+
+
+
+
+
+                                      </div> -->
